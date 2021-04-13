@@ -1,4 +1,4 @@
-/* reset&common */
+/* reset*/
 body,h1,h2,h3,p,ul,li {
 	margin: 0;
 	padding: 0;
@@ -25,12 +25,10 @@ a {
 body {
 	color: #666;
 	background-color: #f7f7f7;
-  font-family:cursive;
 }
 
 header,footer {
 	background-color: #666;
-	/* background-color: #59514c; */
 }
 header a{
 	color:#dddddd;
@@ -39,22 +37,21 @@ header a:hover,small{
 	color:#f7f7f7;
 	
 }
-
-/* reset&common */
+/* reset*/
 
 
 #toTop {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	bottom: 6%;
-	right: 6%;
+	bottom: 20%;
+	right: 4%;
 	position: fixed;
 	z-index: 2;
 }
 
 .fas{
-	color: #cccccc;
+	color: #666;
 }
 
 /*drawer↓*/
@@ -96,7 +93,6 @@ transform: translate3d(0,204px,0);
 header {
 	height: 80px;
 	width: 100%;
-	/* background-color: #d16ba5; */
 	position: fixed; z-index: 20;
 	overflow: hidden;
 }
@@ -116,17 +112,17 @@ header a {
 
 .headerT{
 	float:left;
+	margin-top: 10px;
+	margin-left:4%;
+
+}
+.headerT p{
 	color: #f7f7f7;
 	font-weight: bold;
-	font-size: 10px;
-	margin-top: 20px;
-	margin-left:4%;
+	font-size: 20px;
 }
 .headerT p:nth-child(2){
-	margin-left: 14px;
-}
-.headerT p:nth-child(3){
-	margin-left: 40px;
+	margin-left: 18px;
 }
 
 #navToggle {
@@ -197,7 +193,7 @@ input:checked+#navToggle span::after{
 .mv h1{
 	z-index: 8;
 	position: absolute;
-	font-size: 3vw;
+	font-size: 3.2vw;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -215,45 +211,16 @@ main {
 	padding-top: 80px;
 }
 
-.image {
-	margin-top: 6%;
-	margin-bottom: 6%;
-}
 
-
-article h1,article h2{
+article h1{
 	font-size: 3.8vw;
 }
 
-main p{
+
+main p,main li{
 font-size: 2.8vw;
 }
 
-.fa-twitter-square {
-	color:#666;
-}
-.fa-twitter-square:hover {
-	color: #cccccc;
-}
-
-tr,th,td,time{
-	font-size: 1.8vw;
-}
-table{
-	padding:5%;
-}
-
-.tc{
-	font-size: 1.8vw;
-	padding-left: 2%;
-}
-
-.red{
-	color: red;
-}
-.under{
-	border-bottom: #666 solid 1px;
-}
 
 .clearfix::after{
 	content: "";
@@ -261,80 +228,47 @@ table{
 	clear: both;
 }
 
-
-article {
-	padding-top: 2%;
-}
-
-.image .landr{
-	float:right;
-	width:50%;
-	padding-top: 1%;
-	padding-left: 2%;
-	padding-bottom: 1%;
-}
-.image .landl{
-	float:left;
-	width:50%;
-	padding-top: 1%;
-	padding-right: 2%;
-	padding-bottom: 1%;
-}
-.image .verticalr{
-	float: right;
-	width:40%;
-	padding-top: 1%;
-	padding-left: 2%;
-	padding-bottom: 1%;
-}
-.image .verticall{
-	float:left;
-	width:40%;
-	padding-top: 1%;
-	padding-right: 2%;
-	padding-bottom: 1%;
-}
-
-/* .wrapper aside{
-	display: none;
-} */
-
 article{
     width: 80%;
+	padding-top: 2%;
     margin-right:auto;
 	margin-left: auto;
 }
 
-.theme aside{
-	overflow: scroll;
+section{
+	margin: 5% 0;
 }
 
-.wrapper{
-	overflow: hidden;
-}
-
-.wrapper div{
-	float:left;
-	width: 60%;
-	padding-right: 3%;
-}
-.wrapper aside{
-	display: block;
+.imgRight{
 	float:right;
-	width: 40%;
+	width:35%;
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-bottom: 1%;
 }
+
+.skill {
+	list-style-image: url(images/sc12.png);
+}
+.skill li{
+	margin-bottom: 2%;
+}
+
 
 
 .link h2{
 	text-align: center;
 	font-size: 2.8vw;
 }
+.caution{
+	text-align: center;
+	font-size: 2vw;
+	margin-bottom: 2%;
+}
 .flex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* align-items: flex-start;
-	flex-flow: row wrap; */
 }
 .textAnchor li{
 	position: relative;
@@ -342,21 +276,27 @@ article{
 	margin-left: 1%;
 	margin-bottom: 2%;
 	transition: all 0.3s;
+	overflow: hidden;
 }
 .textAnchor li:hover{
 	opacity: 0.7;
 }
-.textAnchor li img{
-	width: 250px;
+.textAnchor li:hover img{
+	transform:scale(1.1,1.1);
 }
-.textAnchor li a:last-child{
+
+.textAnchor li img{
+	width: 300px;
+	transition: all 1.5s;
+}
+.textAnchor li p{
 	position:absolute;
 	bottom: 0;
 	left: 0;
 	color:#f7f7f7;
 	font-size: 15px;
 	background:rgba(0,0,0,.5);
-	width: 250px;
+	width: 300px;
 	line-height: 25px;
 	height: 50px;
 	padding-right: 5%;
@@ -368,7 +308,6 @@ article{
 
 /*footer*/
 footer {
-	/* background-color: #d16ba5; */
 	text-align: center;
 	width: 100%;
 	height: 100px;
@@ -398,6 +337,20 @@ footer small {
 	    margin-left: 4%;
 	}
 	
+	
+	
+.mv {
+    width: 80%;
+}
+
+}/*ここまで@media 480*/
+
+
+
+/*ここから@media 768より上*/
+@media screen and (min-width: 768px) {
+
+
 	#navToggle {
 		display: none;
 	}
@@ -419,7 +372,7 @@ footer small {
 			line-height: 38px;
 			color: #f7f7f7;
 			border-radius: 8px;
-			margin-left: 10px;
+			margin-left: 30px;
 			float: left;
 		}
 		.navWide a{
@@ -435,54 +388,7 @@ footer small {
 		.navWide a:hover {
 		background-size: 100% 2px;
 		}
-		.headerT{
-			margin-top: 10px;;
-		}
-		.headerT p {
-			font-size: 12px;
-		}
-	
-.mv {
-    width: 80%;
-}
 
-
-/* .image .land{
-	float:right;
-	width:40%;
-	padding-top: 1%;
-	padding-left: 2%;
-	padding-bottom: 1%;
-}
-.image .vertical{
-	float: right;
-	width:35%;
-	padding-top: 1%;
-	padding-left: 2%;
-	padding-bottom: 1%;
-} */
-
-
-
-}/*ここまで@media 480*/
-
-
-
-/*ここから@media 768より上*/
-@media screen and (min-width: 768px) {
-
-	.headerT{
-		margin-top: 6px;;
-	}
-	.headerT p {
-		font-size: 15px;
-	}
-	.headerT p:nth-child(2){
-		margin-left: 28px;
-	}
-	.headerT p:nth-child(3){
-		margin-left: 90px;
-	}
 
 	article {
 		width: 60%;
@@ -491,20 +397,22 @@ footer small {
 		width: 60%;
 	}
 	.mv h1{
-		font-size: 2.2vw;
+		font-size: 2.4vw;
 	}
 
 	main h1{
 		font-size: 2.4vw;
 	}
-	main p,main h2,.tc{
+	main p,main li{
 	font-size: 1.4vw;
 	}
 
 	.link h2{
 		font-size: 2.2vw;
 	}
-
+	.link p{
+		font-size: 1.4vw;
+	}
 
 }
 /*ここまで@media 768*/

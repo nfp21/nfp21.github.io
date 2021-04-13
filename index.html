@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7RR3SKHDK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T7RR3SKHDK');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
-    <meta name="description" content="ブログです。">
+    <title>NFのポートフォリオサイト</title>
+    <meta name="description" content="html,css,javascriptで作りました。">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="imagas/android-chrome-256x256.png">
   <!--		flexslider↓-->
 	<link rel="stylesheet" href="jq/css/flexslider.css">
 	<!--		flexslider↑-->
-  <meta name="google-site-verification" content="dWYI6B9QRh23EFMf9nubaR5hTaMJclN84Vv7lnr5MIw" />
-
+    <!--		lightbox↓-->
+<link rel="stylesheet" href="jq/css/lightbox.min.css">
+<!--		lightbox↑-->
 </head>
 <body id="top">
     <div id="toTop"><i class="fas fa-3x fa-arrow-alt-circle-up"></i></div>
     <nav id="drawer">
         <!--		jQtoggle class="show"-->
         <ul>
-            <li class="home"><a href="index.html">home</a></li>
-            <li class="skin"><a href="skin/skin.html">skin</a></li>
-            <li class="others"><a href="others/others.html">others</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page1</a></li>
+            <li><a href="#">page2</a></li>
         </ul>
     </nav>
     <header>
-        <a href="#top" class="hdrLogo"><img src="images/bbb.png" alt="ロゴ"></a>
+        <a href="#top" class="hdrLogo"><img src="images/coffee2.png" alt="サイトロゴ"></a>
         <div class="headerT">
+         <p>NF</p>
+         <p>site</p>
+        </div>
+
     <label for="label">
         <input type="checkbox" id="label">
         <div id="navToggle">
@@ -47,20 +44,20 @@
         <nav class="navWide">
             <ul>
                 <li class="whome"><a href="index.html">home</a></li>
-                <li class="wskin"><a href="skin/skin.html">skin</a></li>
-                <li class="wothers"><a href="others/others.html">others</a></li>
+                <li class="wpage1"><a href="#">page1</a></li>
+                <li class="wpage2"><a href="#">page2</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="mv">
-            <h1>ブログ！</h1>
+            <h1>NFsite</h1>
             <div class="flexslider">
 			<ul class="slides">
-				<li data-thumb="images/indexstair.jpg"><img src="images/indexstair.jpg" alt="螺旋階段"></li>
-				<li data-thumb="images/indexlost.jpg"><img src="images/indexlost.jpg" alt="廃墟"></li>
-				<li data-thumb="images/indexrain.jpg"><img src="images/indexrain.jpg" alt="雨の日"></li>
-				<li data-thumb="images/indexwo.jpg"><img src="images/indexwo.jpg" alt="傘と女"></li>
+				<li data-thumb="images/books720.jpg"><img src="images/books720.jpg" alt="読書"></li>
+				<li data-thumb="images/tokyo720.jpg"><img src="images/tokyo720.jpg" alt="散策"></li>
+				<li data-thumb="images/study720.jpg"><img src="images/study720.jpg" alt="勉強"></li>
+				<li data-thumb="images/stone720.jpg"><img src="images/stone720.jpg" alt="落ち着き"></li>
 			</ul>
 		</div>
         </section>
@@ -68,13 +65,41 @@
         <article>
             <h1>about</h1>
             
-            <p>hello</p>
+            <section class="image clearfix">
+                
+            <a href="images/coffee2.png" data-lightbox="c1" data-title="コーヒーブレイク"><img src="images/coffee2.png" alt="コーヒー" class="imgRight" id="c1"></a>
+            <p>NFの自己紹介サイトです。</p>
+            <p>一般公開なので、略歴等は履歴書の方でご確認お願いします。</p>
+            <p>プログラミング教室でweb制作のため、html、css、javascriptを学びました。
+                どちらかといえばデザインよりもコーディングの方に興味があり、今はjavaなどの開発言語も勉強中です。</p>
+            </section>
 
+            <ul class="skill">
+                <li>html、cssは一通り経験し、使い慣れています。<br>
+                    例：mediaqueryでのナビゲーションの切り替えや、position absoluteによる絶対配置など。</li>
+                <li>javascriptを組み合わせてのclassの付け替えや、jQueryを導入した表現も取り入れることができます。</li>
+            </ul>
+         
+
+        </article>
+
+        <section class="link">
+            <h2>自己PR</h2>
+            <p class="caution">※lightbox</p>
+            <ul class="textAnchor flex">
+                
+
+                <li><a href="images/book853.jpg" data-lightbox="c2" data-title="大学時代に漫画から海外文学に興味が移りました。流行りの『鬼滅の刃』などアニメが終わってから知りました…。画像はロシアの作家ドストエフスキー。"><img src="images/books720.jpg" alt="読書" id="c2"><p>趣味は読書。基本的にインドアです。</p></a></li>
+                <li><a href="images/ramen853.jpg" data-lightbox="c3" data-title="地元名物が徳島ラーメンなので、美味しいラーメン屋さんを巡るのが好きです。ミシュランの『蔦』や二郎系など東京に来て美味しいお店を色々知りました。同じとんこつ醤油なのに家系と徳島ラーメンでは味が違う…ラーメンは奥が深いです。おすすめのお店があれば教えて下さい。"><img src="images/tokyo720.jpg" alt="東京" id="c3"><p>Ilove東京。たまに散策します。</p></a></li>
+                <li><a href="images/study853.jpg" data-lightbox="c4" data-title="ドットインストールやprogateを使っています。わからなかったことがわかった時は楽しく、充実感を覚えます。勉強を楽しめるタイプだと思います。"><img src="images/study720.jpg" alt="勉強" id="c4"><p>勉強は大好き。スキルを積みたい!</p></a></li>
+                <li><a href="images/stone853.jpg" data-lightbox="c5" data-title="日々向上しつつ、長く貢献できる職に就くことが今の目標です。石の上にも３年、腰を落ち着けたいです。"><img src="images/stone720.jpg" alt="努力" id="c5"><p>石の上にも3年。最後の就職先を探しています。</p></a></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <div>
-            <img src="images/bbb.png" alt="">
-            <small>Copyright &copy; Butch. All rights reserved.</small>
+            <img src="images/coffee2.png" alt="">
+            <small>Copyright &copy; nf. All rights reserved.</small>
         </div>
     </footer>
     <script
@@ -84,6 +109,9 @@
   <!--		flexslider↓-->
 	<script src="jq/js/jquery.flexslider-min.js"></script>
 	<!--		flexslider↑-->
+    <!--		lightbox↓-->
+<script src="jq/js/lightbox.min.js"></script>
+<!--		lightbox↑-->
     <script src="script.js"></script>
 </body>
 </html>
