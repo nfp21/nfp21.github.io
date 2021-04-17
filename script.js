@@ -51,6 +51,22 @@ $('.flexslider').flexslider({
 //				flexslider↑
 
 
+$(window).scroll(function (){
+    $('.invisible').each(function(){
+        //ターゲットの位置を取得
+        let target = $(this).offset().top;
+        //スクロール量を取得
+        let scroll = $(window).scrollTop();
+        //ウィンドウの高さを取得
+        let height = $(window).height();
+        //ターゲットまでスクロールするとフェードインする
+        if (scroll > target - height){
+            //クラスを付与
+            $(this).addClass('appear');
+        }
+    });
+});
+
 
 			});
             //drawer↑

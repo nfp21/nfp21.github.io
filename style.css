@@ -254,7 +254,16 @@ section{
 	margin-bottom: 2%;
 }
 
+.invisible{
+	opacity:0;
+	transform:translate(0,100px);
+	transition:all 10s;
+}
 
+.invisible.appear{
+	opacity:1;
+	transform:translate(0,0);
+}
 
 .link h2{
 	text-align: center;
