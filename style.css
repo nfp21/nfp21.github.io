@@ -245,7 +245,14 @@ section{
 	padding-top: 1%;
 	padding-left: 2%;
 	padding-bottom: 1%;
+	animation: steam 2.5s infinite;
 }
+
+@keyframes steam{
+	0%{clip-path: inset(55% 0 0 0);}
+	100%{clip-path: inset(0);}
+}
+
 
 .skill {
 	list-style-image: url(images/sc12.png);
@@ -254,14 +261,6 @@ section{
 	margin-bottom: 2%;
 }
 
-.mask{
-	clip-path: inset(100% 0 0 0);
-	transition: all 4s;
-}
-
-.mask.appear{
-	clip-path: inset(0);
-}
 
 .invisible{
 	opacity:0;
