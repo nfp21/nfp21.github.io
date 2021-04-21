@@ -1,19 +1,20 @@
 'use strict';
 
-//drawer↓
+
 $(document).ready(function() {
+	
+//drawer↓
     $('#navToggle').on('click', function() {
         $('#drawer').toggleClass('show');
     })
+//drawer↑
 
 //smoothscroll↓
 $('a[href^="#"]').click(function(){
-    //  $('.menuBoard a').click(function(){
         //スクロールのスピード
         let speed = 500;
     //    //リンク元を取得
         let href= $(this).attr("href");
-        console.log(href);
     //    //リンク先を取得
         let target = $(href == "#" || href == "" ? 'html' : href);
         //ヘッダーの高さを取得
@@ -70,5 +71,4 @@ $(window).scroll(function (){
 
 
 			});
-            //drawer↑
             
