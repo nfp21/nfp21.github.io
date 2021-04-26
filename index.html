@@ -99,6 +99,30 @@ $(function(){
         };
     },2500);
 });
+
+.mv {
+	position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.myslidef{
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	animation: myslide 2.5s infinite;
+}
+.myslideb{
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+@keyframes myslide{
+	0%{clip-path: inset(0);}
+	100%{clip-path: inset(0 0 0 100%);}
+}
+
+
 myslide -->
 	    
 	    
