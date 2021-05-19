@@ -2,12 +2,13 @@
 
 
 $(document).ready(function() {
-	
-//drawer↓
+
+// drawer↓
     $('#navToggle').on('click', function() {
         $('#drawer').toggleClass('show');
     })
-//drawer↑
+// drawer↑
+
 
 //smoothscroll↓
 $('a[href^="#"]').click(function(){
@@ -51,7 +52,6 @@ $('.flexslider').flexslider({
 });
 //				flexslider↑
 
-
 $(window).scroll(function (){
     $('.invisible').each(function(){
         //ターゲットの位置を取得
@@ -64,6 +64,24 @@ $(window).scroll(function (){
         if (scroll > target - height){
             //クラスを付与
             $(this).addClass('appear');
+        }
+    });
+});
+
+
+// gray->color
+$(window).scroll(function (){
+    $('.color').each(function(){
+        //ターゲットの位置を取得
+        let target = $(this).offset().top;
+        //スクロール量を取得
+        let scroll = $(window).scrollTop();
+        //ウィンドウの高さを取得
+        let height = $(window).height();
+        //ターゲットまでスクロールすると
+        if (scroll > target - height + 270){
+            //クラスを付与
+            $(this).removeClass('gray');
         }
     });
 });
