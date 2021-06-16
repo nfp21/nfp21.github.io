@@ -86,6 +86,23 @@ $(window).scroll(function (){
     });
 });
 
+let cc = 0;
+let cv = ['red','blue','gold','green','darkred','orange','skyblue'];
+function changeFc(){
+    let fcc = document.querySelectorAll('.fcc');
+    for(let item of fcc){
+            item.style.color=cv[cc];
+        }
+    cc++;
+    if(cc==7){
+        cc=0;
+    }
+    refresh();
+}
+function refresh(){
+    setTimeout(changeFc,1500);
+}
+changeFc();
 
 
 			});
