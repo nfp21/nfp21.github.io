@@ -147,7 +147,7 @@ aside p:hover{
     transform: scale(0);
   }
   100%{
-    transform:scale(40);
+    transform:scale(60);
     opacity: 0;
   }
 }
