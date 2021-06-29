@@ -33,7 +33,7 @@ body {
 /* reset*/
 
 
-#changefv{
+#change{
 	margin-top: 60vh;
 	padding: 2%;
 	position: fixed;
@@ -42,12 +42,24 @@ body {
 	z-index: 10;
 	background: rgba(164, 154, 248, 0.3);
 	cursor: pointer;
+	width: 120px;
+	height: 160px;
 }
+
+#change p:hover{
+	transform: rotate(5deg);
+	color: burlywood;
+	transition: all.2s;
+}
+
+#changebc{
+	display: none;
+}
+
 
 .fv{
 	height: 80vh;
 }
-
 
 .sl{
 	display: flex;
@@ -70,15 +82,10 @@ body {
 	cursor: pointer;
 }
 
-.slide{
-	font-size: 2rem;
+.slide,.deep{
+	font-size: 1.5rem;
 }
 
-#changefv p:hover{
-	transform: rotate(5deg);
-	color: burlywood;
-	transition: all.2s;
-}
 
 @media screen and (max-width: 780px) {
 	.sl section{
@@ -120,7 +127,7 @@ body {
 	margin-left:2px;
 	margin-right:2px;
 	border-radius: 2px;
-	background-color: aqua;
+	background-color: #b5f814;;
 }
 
 .surround {
@@ -346,13 +353,155 @@ body {
 }
 
 
-#news,#info{
+#news,#items{
+	height:60vh;
+}
+#info{
+	position: relative;
 	height:60vh;
 	background-color:#eeeeee;
 }
-#items{
-	height:60vh;
+.infofix{
+	position: absolute;
+	top: 12%;
+	right: 8%;
+	z-index: 3;
 }
+#info p{
+	font-size: 1.2rem;
+	padding-top: 14%;
+	color: #333;
+	text-shadow: #Fff 1px 0 8px;
+	font-weight: bold;
+}
+.slidetext{
+	overflow: hidden;
+	opacity: 0;
+	display: inline-block;
+}
+.slidetextinner{
+	display: inline-block;
+}
+
+.sar{
+	animation-name: x100;
+	animation-duration: .8s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+.sal{
+	animation-name: x-100;
+	animation-duration: .8s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+	
+
+@keyframes x-100{
+	from{
+		transform: translateX(100%);
+	    opacity: 0;
+	}
+	to{
+		transform:translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes x100{
+	from{
+		transform: translateX(-100%);
+	    opacity: 0;
+	}
+	to{
+		transform:translateX(0);
+		opacity: 1;
+	}
+}
+
+.extend{
+	/* animation-name:extend; */
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	overflow: hidden;
+	/* opacity: 0; */
+}
+.extend::before{
+	animation-name:extend;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:pink;
+}
+@keyframes extend{
+	0%{
+		transform-origin:left;
+		transform: scaleX(0);
+	}
+	50%{
+		transform-origin:left;
+		transform: scaleX(1);
+	}
+	100%{
+		transform-origin:left;
+		transform: scaleX(0);
+	}
+}
+.bappear{
+	animation-name:appeardelay;
+	animation-duration: 1s;
+	animation-delay: .6s;
+	animation-fill-mode: forwards;
+}
+@keyframes appeardelay{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.bappeartrigger{
+	opacity: 0;
+}
+
+
+#info .imgl{
+	position: absolute;
+	border-radius: 5px;
+	left: 8%;
+	top: 8%;
+	width: 250px;
+	max-width: 30%;
+	height: 250px;
+	background-image: url(ideaimg/venice-3118803_1920.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 2;
+}
+
+#info .imgr{
+	position: absolute;
+	border-radius: 5px;
+	left: 2%;
+	bottom: 12%;
+	width: 250px;
+	max-width: 30%;
+	height: 250px;
+	background-image: url(ideaimg/venice-3118803_1920.jpg);
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+@media screen and (max-width: 425px) {
+	.imgr,.imgl{
+		/* display: none; */
+	}
+	}
 
 
 
