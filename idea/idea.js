@@ -3,6 +3,44 @@
 
 $(document).ready(function() {
 
+$('.slide').click(function(){
+	$('.sl').show()
+	$('.mod,.sim,.spl').hide()
+	$('.slide').css("fontSize","2rem")
+	$('.modern,.simple,.split').css("fontSize","1rem")
+})
+$('.modern').click(function(){
+	$('.sl,.sim,.spl').hide()
+	$('.mod').show()
+	$('.modern').css("fontSize","2rem")
+	$('.slide,.simple,.split').css("fontSize","1rem")
+})
+$('.simple').click(function(){
+	$('.sl,.mod,.spl').hide()
+	$('.sim').show()
+	$('.simple').css("fontSize","2rem")
+	$('.slide,.modern,.split').css("fontSize","1rem")
+})
+$('.split').click(function(){
+	$('.sl,.mod,.sim').hide()
+	$('.spl').show()
+	$('.split').css("fontSize","2rem")
+	$('.slide,.modern,.simple').css("fontSize","1rem")
+})
+
+
+
+// .sl
+// .mod
+// .sim
+// .spl
+// #changefv
+// .slide
+// .modern
+// .simple
+// .split
+
+
     
 //テキストのカウントアップ+バーの設定
 let bar = new ProgressBar.Line(splash_text, {//id名を指定
