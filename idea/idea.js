@@ -3,30 +3,48 @@
 
 $(document).ready(function() {
 
+$('.nonef').click(function(){
+	$('.no').show();
+	$('.sl,.mod,.sim,.spl').hide();
+	$('.nonef').css("fontSize","1.5rem");
+	$('.slide,.modern,.simple,.split').css("fontSize","1rem");
+  $("body").removeClass("flexforsplit");
+  $('.splitright').css('width','auto');
+})
 $('.slide').click(function(){
 	$('.sl').show();
-	$('.mod,.sim,.spl').hide();
+	$('.no,.mod,.sim,.spl').hide();
 	$('.slide').css("fontSize","1.5rem");
-	$('.modern,.simple,.split').css("fontSize","1rem");
+	$('.nonef,.modern,.simple,.split').css("fontSize","1rem");
+  $("body").removeClass("flexforsplit");
+  $('.splitright').css('width','auto');
 })
 $('.modern').click(function(){
-	$('.sl,.sim,.spl').hide();
 	$('.mod').show();
+  $('.no,.sl,.sim,.spl').hide();
 	$('.modern').css("fontSize","1.5rem");
-	$('.slide,.simple,.split').css("fontSize","1rem");
+	$('.nonef,.slide,.simple,.split').css("fontSize","1rem");
+  $("body").removeClass("flexforsplit");
+  $('.splitright').css('width','auto');
 })
 $('.simple').click(function(){
-	$('.sl,.mod,.spl').hide();
+	$('.no,.sl,.mod,.spl').hide();
 	$('.sim').show();
 	$('.simple').css("fontSize","1.5rem");
-	$('.slide,.modern,.split').css("fontSize","1rem");
+	$('.nonef,.slide,.modern,.split').css("fontSize","1rem");
+  $("body").removeClass("flexforsplit");
+  $('.splitright').css('width','auto');
 })
 $('.split').click(function(){
-	$('.sl,.mod,.sim').hide();
+	$('.no,.sl,.mod,.sim').hide();
 	$('.spl').show();
 	$('.split').css("fontSize","1.5rem");
-	$('.slide,.modern,.simple').css("fontSize","1rem");
+	$('.nonef,.slide,.modern,.simple').css("fontSize","1rem");
+  $("body").addClass("flexforsplit");
+  $('.splitright').css('width','50%');
 })
+
+
 $('.deep').click(function(){
 	$('#info').css('background-image','none')
 	$('#info').css('background-color','#eeeeee');
@@ -45,32 +63,43 @@ $('.none').click(function(){
 	$('#particles-js').hide();
 	$('#video-area2').hide();
 	$('#video-area3').hide();
+  $('#video-area4').hide();
 })
 $('.anime').click(function(){
 	$('#particles-js').show();
 	$('#video-area1').hide();
 	$('#video-area2').hide();
 	$('#video-area3').hide();
+  $('#video-area4').hide();
 })
 $('.movie1').click(function(){
 	$('#video-area1').show();
 	$('#particles-js').hide();
 	$('#video-area2').hide();
 	$('#video-area3').hide();
+  $('#video-area4').hide();
 })
 $('.movie2').click(function(){
 	$('#video-area2').show();
 	$('#particles-js').hide();
 	$('#video-area1').hide();
 	$('#video-area3').hide();
+  $('#video-area4').hide();
 })
 $('.movie3').click(function(){
 	$('#video-area3').show();
 	$('#particles-js').hide();
 	$('#video-area1').hide();
 	$('#video-area2').hide();
+  $('#video-area4').hide();
 })
-
+$('.movie4').click(function(){
+	$('#video-area4').show();
+	$('#particles-js').hide();
+	$('#video-area1').hide();
+	$('#video-area2').hide();
+  $('#video-area3').hide();
+})
 
 
 $(window).scroll(function (){
@@ -87,6 +116,52 @@ $(window).scroll(function (){
 		  }
     });
 });
+
+$(window).scroll(function (){
+  $('#items').each(function(){
+      let target = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let height = $(window).height();
+      if (scroll > target - height){
+      $('.splitleft').css('background-image','url(ideaimg/pedestrians-1209316_1920.jpg)');
+      $('.hiddenm').show();
+    }else{
+      $('.splitleft').css('background-image','url(ideaimg/life-863166_1920.jpg)');
+      $('.hiddenm').hide();
+    }
+  });
+});
+
+
+
+//画像の設定
+var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
+    if (windowwidth > 768){
+      var responsiveImage = [
+        { src: 'ideaimg/slideimg/book-cup.jpg'},
+        { src: 'ideaimg/slideimg/woman-shain.jpg'},
+        { src: 'ideaimg/slideimg/room.jpg'}
+      ];
+      } else {
+      var responsiveImage = [
+        { src: 'ideaimg/slideimg/book-cup.jpg'},
+        { src: 'ideaimg/slideimg/woman-shain.jpg'},
+        { src: 'ideaimg/slideimg/room.jpg'}
+      ];
+    }
+//Vegas全体の設定
+$('.slideshow').vegas({
+    overlay: true,//画像の上に網線やドットのオーバーレイパターン画像を指定。
+    transition: 'fade2',//切り替わりのアニメーション。http://vegas.jaysalvat.com/documentation/transitions/参照。fade、fade2、slideLeft、slideLeft2、slideRight、slideRight2、slideUp、slideUp2、slideDown、slideDown2、zoomIn、zoomIn2、zoomOut、zoomOut2、swirlLeft、swirlLeft2、swirlRight、swirlRight2、burnburn2、blurblur2、flash、flash2が設定可能。
+    transitionDuration: 2000,//切り替わりのアニメーション時間をミリ秒単位で設定
+    delay: 5000,//スライド間の遅延をミリ秒単位で。
+    animationDuration: 20000,//スライドアニメーション時間をミリ秒単位で設定
+    animation: 'random',//スライドアニメーションの種類。http://vegas.jaysalvat.com/documentation/transitions/参照。kenburns、kenburnsUp、kenburnsDown、kenburnsRight、kenburnsLeft、kenburnsUpLeft、kenburnsUpRight、kenburnsDownLeft、kenburnsDownRight、randomが設定可能。
+    slides: responsiveImage,//画像設定を読む
+  });
+
+
+
 
 
 $(window).scroll(function (){

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
 </head>
 
 <body>
@@ -21,6 +22,7 @@
     
         <span id="change">
             <span id="changefv">
+            <p class="nonef">none</p>
             <p class="slide">slide</p>
             <p class="modern">modern</p>
             <p class="simple">simple</p>
@@ -33,7 +35,12 @@
         </span>
         </span>
 
-    
+
+        <section class="splitleft spl">
+            <p class="hiddenm">No seek, no find.</p>
+        </section>
+
+        <section class="splitright">
 
         <div class="header tp">
             <span class="surround"><span class="surround2">囲む</span></span>
@@ -48,9 +55,10 @@
             <span class="rotation">回<span class="rotate">転</span></span>
         </div>
 
-    <section class="fv sl">
+    <section class="fv no">
+        <h1>NONE</h1>
         <section>
-            <h1>キービジュアル</h1>
+            <h2>キービジュアル</h2>
             <p>ファーストビューの多くを占める。</p>
             <p>最も広告効果が高い部分なので、</p>
             <p>情報量をかさ増しできるスライドは</p>
@@ -64,17 +72,22 @@
         </aside>
     </section>
 
-    <section class="fv mod">
-        <h1>モダンデザイン</h1>
-        <p>切り抜いた写真を使う。</p>
-        <p>トーンを変えた写真を重ねる。</p>
-        <p>テキストを散りばめる。</p>
-        <p>など。</p>
+    <section class="fv sl">
+        <div class="slideshow"></div>
+        <h1>SLIDESHOW</h1>
     </section>
 
-    <section class="fv sim"></section>
+    <section class="fv mod">
+        <h1>MODERN</h1>
+    </section>
 
-    <section class="fv spl"></section>
+    <section class="fv sim">
+        <h1>SIMPLE</h1>
+    </section>
+
+    <section class="fv splitbox spl">
+        <h1>SPLIT</h1>
+    </section>
 
     <div class="header bt">
         <span class="underline">下線</span>
@@ -83,6 +96,8 @@
         <span class="luminous">ピカリ</span>
     </div>
 
+
+    <!-- 全面 -->
         <div id="video-area1">
             <video id="video1" poster="ideaimg/abstract-1138967_1920.jpg" webkit-playsinline playsinline muted autoplay loop>
             <source src="video/Beach.mp4" type="video/mp4">
@@ -106,12 +121,19 @@
             <source src="video/Seoul.webm" type="video/webm">
             </video>
         </div>
+        <div id="video-area4">
+            <video id="video4" poster="ideaimg/abstract-1138967_1920.jpg" webkit-playsinline playsinline muted autoplay loop>
+            <source src="video/Astronaut.mp4" type="video/mp4">
+            <source src="video/Seoul.ogv" type="video/ogv">
+            <source src="video/Astronaut.webm" type="video/webm">
+            </video>
+        </div>
     
         <div id="particles-js"></div>
+    <!-- 全面 -->
 
 
     <section id="news">
-
         <div class="subContents">
 				<h2>NEWS</h2>
 				<dl>
@@ -153,10 +175,8 @@
             <span class="button movie1">movie1</span>
             <span class="button movie2">movie2</span>
             <span class="button movie3">movie3</span>
-
+            <span class="button movie4">movie4</span>
         </span>
-
-
             
     </section>
 
@@ -190,6 +210,7 @@
         <div class="fluid"></div>
     </section>
 
+</section><!-- .splitright -->
 
 
     <script
@@ -200,6 +221,7 @@
       <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
 </body>
 
 
