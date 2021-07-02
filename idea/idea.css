@@ -302,6 +302,7 @@ body {
 	position: absolute;
 	left: 0%;
 	top: 45px;
+	z-index: 2;
 	display: none;
 }
 
@@ -309,7 +310,7 @@ body {
 	display: inline-block;
 }
 .drawers li:hover{
-	opacity: .4;
+	background-color: rgb(179, 179, 179);
 }
 
 .rotate{

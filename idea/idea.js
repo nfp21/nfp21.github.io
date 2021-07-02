@@ -53,7 +53,7 @@ $('.deep').click(function(){
 })
 $('.filter').click(function(){
 	$('#info').css('background-color','none')
-	$('#info').css('background-image','url(ideaimg/pedestrians-1209316_1920.jpg)');
+	$('#info').css('background-image','url(ideaimg/pedestriansBC.jpg)');
 	$('.filter').css("fontSize","1.5rem");
 	$('.deep').css("fontSize","1rem");
 })
