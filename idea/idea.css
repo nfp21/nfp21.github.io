@@ -42,7 +42,7 @@ body {
 	z-index: 10;
 	background: rgba(164, 154, 248, 0.5);
 	cursor: pointer;
-	width: 120px;
+	width: 140px;
 	height: 160px;
 	color: #fff;
 }
@@ -631,6 +631,7 @@ body {
 	position: relative;
 	height:60vh;
 	background-color:#eeeeee;
+	background-size: cover;
 }
 .infofix{
 	position: absolute;

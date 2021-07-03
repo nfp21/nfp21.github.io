@@ -50,13 +50,144 @@ $('.deep').click(function(){
 	$('#info').css('background-color','#eeeeee');
 	$('.deep').css("fontSize","1.5rem");
 	$('.filter').css("fontSize","1rem");
+  $('.dots').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+  $('.love').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
 })
 $('.filter').click(function(){
 	$('#info').css('background-color','none')
 	$('#info').css('background-image','url(ideaimg/pedestriansBC.jpg)');
 	$('.filter').css("fontSize","1.5rem");
 	$('.deep').css("fontSize","1rem");
+  $('.dots').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+  $('.love').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
 })
+$('.dots').click(function(){
+	$('#info').css('background-color','none')
+	$('#info').css('background-image','url(pattern/grey.png)');
+	$('.dots').css("fontSize","1.5rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+  $('.love').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.rich').click(function(){
+	$('#info').css('background-color','none')
+  $('#info').css('background-image','url(pattern/bokeh.jpg)');
+  $('.rich').css("fontSize","1.5rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+  $('.love').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.flower').click(function(){
+	$('#info').css('background-color','none')
+  $('#info').css('background-image','url(pattern/paper-flower.jpg)');
+  $('.flower').css("fontSize","1.5rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.love').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.love').click(function(){
+	$('#info').css('background-color','none')
+  $('#info').css('background-image','url(pattern/love.png)');
+  $('.love').css("fontSize","1.5rem");
+  $('.flower').css("fontSize","1rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.confetti').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.confetti').click(function(){
+	$('#info').css('background-color','none')
+$('#info').css('background-image','url(pattern/confetti.jpg)');
+$('.confetti').css("fontSize","1.5rem");
+$('.love').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.colorful').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.colorful').click(function(){
+	$('#info').css('background-color','none')
+$('#info').css('background-image','url(pattern/colorful.jpg)');
+$('.colorful').css("fontSize","1.5rem");
+$('.confetti').css("fontSize","1rem");
+$('.love').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.half').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.half').click(function(){
+	$('#info').css('background-color','none')
+$('#info').css('background-image','url(pattern/half.png)');
+$('.half').css("fontSize","1.5rem");
+$('.colorful').css("fontSize","1rem");
+$('.confetti').css("fontSize","1rem");
+$('.love').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+  $('.pop').css("fontSize","1rem");
+})
+$('.pop').click(function(){
+	$('#info').css('background-color','none')
+$('#info').css('background-image','url(pattern/pop.jpg)');
+$('.pop').css("fontSize","1.5rem");
+$('.half').css("fontSize","1rem");
+$('.colorful').css("fontSize","1rem");
+$('.confetti').css("fontSize","1rem");
+$('.love').css("fontSize","1rem");
+  $('.flower').css("fontSize","1rem");
+	$('.dots').css("fontSize","1rem");
+	$('.deep').css("fontSize","1rem");
+  $('.filter').css("fontSize","1rem");
+  $('.rich').css("fontSize","1rem");
+})
+
+
+
 
 $('.none').click(function(){
 	$('#video-area1').hide();
@@ -109,7 +240,7 @@ $(window).scroll(function (){
         let height = $(window).height();
         if (scroll > target - height){
 			$('#changefv').hide();
-			$('#changebc').show();
+			$('#changebc').css('display','flex');
 		  }else{
 			$('#changefv').show();
 			$('#changebc').hide();
