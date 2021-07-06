@@ -126,8 +126,9 @@ img{
 }
 @media screen and (max-width: 480px) {
 	img{
-		width: 50%;
-		height: 25%;
+		width: 70%;
+		height: 30%;
+		left:15%
 	}
 }
 
@@ -166,4 +167,27 @@ img{
 }
 #cell12{
 	background-image: url(images-ex/ex12.jpg);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+	.extra{
+		width: 100vw;
+		height:auto;
+	}
+	.row a{
+		display: none;
+	}
+	.row{
+		width: 100vw;
+		display: block;
+		overflow: visible;
+	}
+	html{
+		scroll-behavior: auto;
+	}
 }
