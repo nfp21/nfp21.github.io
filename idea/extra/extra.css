@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* reset*/
+body,h1,h2,h3,p,ul,li {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+	width: 100%;
+	vertical-align: bottom;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #666;
+	background-color: #f7f7f7;
+}
+html{
+	scroll-behavior: smooth;
+}
+/* reset*/
+
+.extra{
+	width:400vw;
+	height: 300vh;
+
+}
+
+.extra h1{
+	writing-mode: vertical-rl;
+	z-index: 2;
+	letter-spacing: 1em;
+	position: fixed;
+	top: 2%;
+	left: 0.8%;
+	color: #f7f7f7;
+}
+
+.row{
+	width: 400vw;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.side,.side2{
+	/* display: inline-block; */
+	width: 100vw;
+	border: #666 1px solid;
+	height: 100vh;
+	position: relative;
+	background-color:rgba(255, 255, 255, 0.8);
+	background-blend-mode:lighten;
+}
+
+.ar{
+	background-image: url(images-ex/next.png);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+}
+.al{
+	background-image: url(images-ex/prev.png);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+}
+.at{
+	background-image: url(images-ex/next.png);
+	transform: rotate(-90deg);
+	position: absolute;
+	right: 50%;
+	top: 0;
+	width: 50px;
+	height: 50px;
+}
+.ab{
+	background-image: url(images-ex/next.png);
+	transform: rotate(90deg);
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.side:nth-child(odd){
+	background-color: rgba(255, 230, 0,.5);
+}
+.side:nth-child(even){
+	background-color: rgba(162, 0, 255,.5);
+}
+.side2:nth-child(even){
+	background-color: rgba(255, 230, 0,.5);
+}
+.side2:nth-child(odd){
+	background-color: rgba(162, 0, 255,.5);
+}
+
+img{
+	position: absolute;
+	top: 35%;
+	left:25%;
+	width: 50%;
+	height: 55%;
+}
+@media screen and (max-width: 780px) {
+	img{
+		width: 50%;
+		height: 35%;
+	}
+}
+@media screen and (max-width: 480px) {
+	img{
+		width: 50%;
+		height: 25%;
+	}
+}
+
+#cell1{
+	background-image: url(images-ex/ex1.jpg);
+}
+#cell2{
+	background-image: url(images-ex/ex2.jpg);
+}
+#cell3{
+	background-image: url(images-ex/ex3.jpg);
+}
+#cell4{
+	background-image: url(images-ex/ex4.jpg);
+}
+#cell5{
+	background-image: url(images-ex/ex5.jpg);
+}
+#cell6{
+	background-image: url(images-ex/ex6.jpg);
+}
+#cell7{
+	background-image: url(images-ex/ex7.jpg);
+}
+#cell8{
+	background-image: url(images-ex/ex8.jpg);
+}
+#cell9{
+	background-image: url(images-ex/ex9.jpg);
+}
+#cell10{
+	background-image: url(images-ex/ex10.jpg);
+}
+#cell11{
+	background-image: url(images-ex/ex11.jpg);
+}
+#cell12{
+	background-image: url(images-ex/ex12.jpg);
+}
