@@ -22,16 +22,20 @@ a {
 body {
 	color: #666;
 	background-color: #f7f7f7;
+	
 }
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+
 }
 /* reset*/
 
 .extra{
 	width:400vw;
-	height: 300vh;
-
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
 }
 
 .extra h1{
@@ -46,9 +50,11 @@ html{
 
 .row{
 	width: 400vw;
+	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
-	overflow: hidden;
+	scroll-snap-align: start;
+
 }
 
 .side,.side2{
@@ -184,8 +190,9 @@ img{
 	}
 	.row{
 		width: 100vw;
+		height: 400vh;
 		display: block;
-		overflow: visible;
+		/* overflow: visible; */
 	}
 	html{
 		scroll-behavior: auto;
